@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Details</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Hotel Details</h1>
+<div class="details-container">
+    <p><strong>Name:</strong> <span th:text="${hotel.name}"></span></p>
+    <p><strong>Address:</strong> <span th:text="${hotel.address}"></span></p>
+    <p><strong>Stars:</strong> <span th:text="${hotel.stars}"></span></p>
+</div>
+<a class="btn back-btn" href="/hotels">Back to List</a>
+</body>
+</html>
+

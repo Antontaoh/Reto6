@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Monument List</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Monument List</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Creation Date</th>
+    <th>Location</th>
+    <th>Actions</th>
+  </tr>
+  <tr th:each="monument : ${monuments}">
+    <td th:text="${monument.name}"></td>
+    <td th:text="${monument.creationDate}"></td>
+    <td th:text="${monument.location}"></td>
+    <td>
+      <a class="btn" th:href="@{/monuments/{id}(id=${monument.id})}">View Details</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+

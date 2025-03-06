@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Details</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Restaurant Details</h1>
+<div class="details-container">
+    <p><strong>Name:</strong> <span th:text="${restaurant.name}"></span></p>
+    <p><strong>Location:</strong> <span th:text="${restaurant.location}"></span></p>
+    <p><strong>Cuisine Type:</strong> <span th:text="${restaurant.cuisineType}"></span></p>
+    <p><strong>Average Price:</strong> <span th:text="${restaurant.averagePrice} + '€'"></span></p>
+</div>
+<a class="btn back-btn" href="/restaurants">Back to List</a>
+</body>
+</html>
+

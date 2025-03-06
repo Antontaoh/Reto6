@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Monument Details</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Monument Details</h1>
+<div class="details-container">
+    <p><strong>Name:</strong> <span th:text="${monument.name}"></span></p>
+    <p><strong>Creation Date:</strong> <span th:text="${monument.creationDate}"></span></p>
+    <p><strong>Location:</strong> <span th:text="${monument.location}"></span></p>
+    <p><strong>Description:</strong> <span th:text="${monument.description}"></span></p>
+</div>
+<a class="btn back-btn" href="/monuments">Back to List</a>
+</body>
+</html>
+
